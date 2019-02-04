@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/test.js"></script>
+  </head>
+  <body>
+    <%- include('leftmenu.html') -%>
+    <div id="maincont"><%- include('index.html') -%>       
+    </div>    
+    <script>
+        document.querySelector('#framecont').src = "index.html";
+        // You can also require other files to run in this process
+        require('../renderer.js')
+    </script>
+  </body>
+</html>
