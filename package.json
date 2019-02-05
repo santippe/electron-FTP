@@ -20,6 +20,7 @@
     "electron": "^4.0.3"
   },
   "dependencies": {
-    "ejs-electron": "^2.0.3"
+    "ejs-electron": "^2.0.3",
+    "mssql": "^4.3.1"
   }
 }
