@@ -1,0 +1,98 @@
+body{
+    margin: 0px;
+    font-size: 16px;    
+}
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body>*{
+    position: absolute;
+    top:0px;bottom: 0px;
+    left: 0px;right: 0px;
+    width: auto;
+    height: auto;
+}
+#leftmenu{
+    right: auto;
+    width: 200px;
+    background-color: rgb(53, 122, 131);
+    font-weight: bold;
+}
+#leftmenu>a{
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    color: inherit;
+    text-decoration: none;
+    color: #eee;
+    cursor: pointer;
+}
+#leftmenu>a:hover{
+    background-color: rgb(53, 93, 131); 
+}
+#maincont{
+    left: 200px;    
+    background-color: rgb(53, 93, 131);
+    overflow: hidden;
+}
+.mainviews{
+    opacity: 0;
+    position: absolute;
+    padding: 20px;
+    box-sizing: border-box;
+    left: 0px;right: 0px;
+    top: 0px;bottom: 0px;    
+    overflow: auto;
+    transition: opacity 1s;
+}
+iframe{
+    height:100%;
+    width:100%;
+    border: none;    
+}
+#footer{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;right: 0px;
+    padding: 20px;
+    background-color: rgb(53, 122, 131);
+}
+table{
+    border: none;
+    border-collapse: collapse;    
+}
+td{
+    padding: 5px;
+}
+input[type=text],select{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    height: 30px;
+    margin: 0px;
+    box-sizing: border-box;
+    width: 300px;outline: none;
+    background-color: rgba(0,0,0,0.2);
+    color: #eee;
+    font-size: 16px;        
+}
+button,.button{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    height: 30px;
+    line-height: 10px;
+    margin: 0px;
+    box-sizing: border-box;
+    width: 300px;outline: none;
+    text-align: center;
+    color: #eee;
+    background-color: rgba(0,0,0,0.2);
+    font-size: 16px; 
+    cursor: pointer;
+    position: relative;
+}
+button:active,.button:active{
+    top: 2px;
+}
