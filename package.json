@@ -1,5 +1,5 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-ftp",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
@@ -10,11 +10,9 @@
   "keywords": [
     "Electron",
     "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "ftp"
   ],
-  "author": "GitHub",
+  "author": "Marco Mascioli",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^4.0.3"
