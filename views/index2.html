@@ -1,6 +1,6 @@
 <h2>Parse file</h2>
 <table>
-    <tr><td>Test 1</td><td>:</td><td><button>Test 1</button></td></tr>
+    <tr><td>Test 1</td><td>:</td><td><button onclick="loadFileLocal()">Test 1</button></td></tr>
     <tr><td>Test 2</td><td>:</td><td><select name="" id="">
         <option value="J1">JSON</option>
         <option value="DR">CSV - DetailReport</option>
@@ -9,6 +9,14 @@
     <tr><td>Test 3</td><td>:</td><td><input type="text" value=""></td></tr>
 </table>
 <script>
+    function loadFileLocal(){
+        const {dialog} = require('electron').remote;
+        let fileSelected = dialog.showOpenDialog();
+        for(let a=0;a<fileSelected.length;a++){
+            dialog.showMessageBox({'message':fileSelected[a]});            
+        }
+    }
+
     //load csv file
     function elaborateFile(){
         //select kind of file
