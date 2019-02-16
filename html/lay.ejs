@@ -9,25 +9,27 @@
   <body>
     <%- include('leftmenu.html') %>
     <div id="maincont">
-      <div class="mainviews"><%- include('../views/index1.html') -%></div>      
-      <div class="mainviews"><%- include('../views/index2.html') -%></div>
+        <div class="mainviews"><%- include('../views/ftpsettings.html') %></div>            
+        <div class="mainviews"><%- include('../views/listOfFile.html') %></div>        
     </div>    
     <script>
-        console.log('Test \\');
         let anchors = document.querySelectorAll('#leftmenu>a');
         let views = document.querySelectorAll('.mainviews');
         for(let a=0;a<anchors.length;a++){
             anchors[a].addEventListener('click',function(e){
                 for(let b=0;b<views.length;b++){
                     views[b].style.opacity = 0;
+                    views[b].style.zIndex=0;
                 };
                 let c1=a;
                 views[c1].style.opacity=1;
-                e.preventDefault();
-                return false;
+                views[c1].style.zIndex=100;
+                e.preventDefault();  
+                return false;              
             });
         }
     </script>
+    <script src="../scripts/ftp.js"></script>
     <script>
         //nedd to take the second path and redirect to it
         // You can also require other files to run in this process
