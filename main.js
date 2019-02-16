@@ -24,27 +24,6 @@ function createWindow() {
     mainWindow = null
   })
 }
-const sql = require('mssql');
-global.sql = sql;
-callSQLServer();
-function callSQLServer() {
-  let config = {
-    //user: '...',
-    //password: '...',
-    //server: '.\SQLEXPRESS',
-    server: 'localhost\\SQLEXPRESS',
-    database: 'test'
-  };
-  sql.connect(config, err => {
-    new sql.Request().query('select 1 as number', (err, result) => {
-        console.log(result)
-    });
-})
- 
-sql.on('error', err => {
-    // ... error handler
-})
-}
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.

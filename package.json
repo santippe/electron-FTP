@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "ejs-electron": "^2.0.3",
+    "ftp": "^0.3.10",
     "mssql": "^4.3.1"
   }
 }
