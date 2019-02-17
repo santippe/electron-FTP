@@ -1,5 +1,6 @@
 let configFTP = {
     'host': 'peshop.servehttp.com',
+    'port': 6000,
     'user': 'ftppeshop',
     'password': 'porcodio'
 };
