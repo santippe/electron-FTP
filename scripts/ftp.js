@@ -15,7 +15,7 @@ function loadFileLocal() {
 function downloadFromFtp(remotepath, localpath) {
     genericFTPCommand((c) => {
         c.on('ready', function () {
-            c.get(remote, function (err, stream) {
+            c.get(remotepath, function (err, stream) {
                 if (err) throw err;
                 stream.once('close', function () { c.end(); });
                 stream.pipe(fs.createWriteStream(__dir__ + '/download/' + localpath));
