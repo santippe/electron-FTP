@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 body{
     margin: 0px;
     font-size: 16px;    
 }
 *{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 body>*{
     position: absolute;
@@ -16,7 +17,7 @@ body>*{
     right: auto;
     width: 200px;
     background-color: rgb(53, 122, 131);
-    font-weight: bold;
+    font-weight: 700;
 }
 #leftmenu>a{
     display: block;
@@ -45,6 +46,7 @@ body>*{
     top: 0px;bottom: 0px;    
     overflow: auto;
     transition: opacity 1s;
+    color: #eee;
 }
 iframe{
     height:100%;
@@ -62,6 +64,7 @@ table{
     border: none;
     border-collapse: collapse; 
     width: 100%;   
+    margin-bottom: 20px;
 }
 td{
     padding: 5px;
@@ -102,4 +105,7 @@ button:active,.button:active{
 }
 .alttable tr:nth-child(2n+1){
     background-color: rgba(200,250,255,0.5);
+}
+.alttable tr[select]{
+    background-color: rgba(50,100,0);
 }
